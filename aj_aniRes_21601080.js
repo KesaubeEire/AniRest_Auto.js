@@ -65,9 +65,13 @@ function SweepRest() {
   click(1010, 1300);
 
   // Additional Pay Point
-  click(150, 900);
+  // click(150, 900);
+  click(440, 750);
+
   click(500, 1800);
-  click(476, 1636);
+
+  // click(476, 1636);
+  click(743, 1576);
 
   // Cancel dialog UI
   click(388, 1911);
