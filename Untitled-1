@@ -1,0 +1,3 @@
+shellScript = "ip_addr=$(curl -s cippv6.ustb.edu.cn/get_ip.php) ; echo ${ip_addr} "
+ip_addr = shell(shellScript).result
+toast(ip_addr)

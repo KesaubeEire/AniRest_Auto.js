@@ -8,7 +8,7 @@ gotoMain();
 
 while (true) {
   // Custom Coming Point
-  click(1000, 2000);
+  click(1000, 2000 + 180);
 
   // time sweep
 
@@ -49,33 +49,33 @@ while (true) {
 function SweepRest() {
   toast("Begin SweepRest");
   // Table Order Point
-  click(400, 800);
-  click(670, 800);
-  click(940, 800);
-  click(400, 1150);
-  click(670, 1150);
-  click(940, 1150);
+  click(400, 860);
+  click(670, 860);
+  click(940, 860);
+  click(400, 1250);
+  click(670, 1250);
+  click(940, 1250);
 
   // Table Pay Point
-  click(470, 950);
-  click(740, 950);
-  click(1010, 950);
-  click(470, 1300);
-  click(740, 1300);
-  click(1010, 1300);
+  click(470, 1000);
+  click(740, 1000);
+  click(1010, 1000);
+  click(470, 1430);
+  click(740, 1430);
+  click(1010, 1430);
 
   // Additional Pay Point
   // click(150, 900);
-  click(440, 750);
+  click(440, 750 + 180);
 
-  click(500, 1800);
+  click(500, 1800 + 180);
 
   // click(476, 1636);
-  click(743, 1576);
+  click(743, 1576 + 180);
 
   // Cancel dialog UI
-  click(388, 1911);
-  click(540, 1400);
+  click(388, 1911 + 180);
+  click(540, 1400 + 180);
   toast("Done SweepRest");
 }
 
@@ -84,109 +84,123 @@ function SweepRest() {
 function SweepGarden() {
   // Garden Point
   //    mail point
-  click(70, 630);
+  click(70, 670);
   //    gate point
   click(770, 530);
   //    star points
-  click(500, 560);
-  click(700, 560);
-  click(900, 560);
+  click(500, 580);
+  click(700, 580);
+  click(900, 580);
 
   //    plant points
-  click(300, 980);
-  sleep(1000);
-  click(540, 1314);
-  click(540, 1314);
-  sleep(1000);
+  click(300, 1100);
+  sleep(600);
+  click(540, 1414);
+  click(540, 1414);
+  sleep(600);
 
-  click(770, 980);
-  sleep(1000);
-  click(540, 1314);
-  click(540, 1314);
-  sleep(1000);
+  click(770, 1100);
+  sleep(600);
+  click(540, 1414);
+  click(540, 1414);
+  sleep(600);
 
-  click(300, 1300);
-  sleep(1000);
-  click(540, 1314);
-  click(540, 1314);
-  sleep(1000);
+  click(300, 1400);
+  sleep(600);
+  click(540, 1414);
+  click(540, 1414);
+  sleep(600);
 
-  click(770, 1300);
-  sleep(1000);
-  click(540, 1314);
-  click(540, 1314);
-  sleep(1000);
+  click(770, 1400);
+  sleep(600);
+  click(540, 1414);
+  click(540, 1414);
+  sleep(600);
 
   // #
   // #
 
   //    flower points
-  click(440, 930);
-  click(440, 930);
+  click(440, 1000);
+  click(440, 1000);
+  click(440, 1000);
+  sleep(1000);
 
-  click(930, 930);
-  click(930, 930);
+  click(930, 1000);
+  click(930, 1000);
+  click(930, 1000);
+  sleep(1000);
 
-  click(440, 1250);
-  click(440, 1250);
+  click(440, 1380);
+  click(440, 1380);
+  click(440, 1380);
+  sleep(1000);
 
-  click(930, 1250);
-  click(930, 1250);
+  // click(930, 1380);
+  // click(930, 1380);
+  // click(930, 1380);
+  click(1000, 1380);
+  click(1000, 1380);
+  click(1000, 1380);
+
+  sleep(600);
 
   //    plant points
-  click(300, 980);
+  click(300, 1100);
   sleep(400);
-  click(540, 1314);
-  sleep(400);
-
-  click(770, 980);
-  sleep(400);
-  click(540, 1314);
+  click(540, 1414);
   sleep(400);
 
-  click(300, 1300);
+  click(770, 1100);
   sleep(400);
-  click(540, 1314);
+  click(540, 1414);
   sleep(400);
 
-  click(770, 1300);
+  click(300, 1400);
   sleep(400);
-  click(540, 1314);
+  click(540, 1414);
+  sleep(400);
+
+  click(770, 1400);
+  sleep(400);
+  click(540, 1414);
   sleep(400);
 
   //    plant confirm button
-  click(540, 1314);
+  click(540, 1414);
 }
 
 // Go to MainRoom
 function gotoMain() {
   // gesture(1000, [0, 0], [500, 500], [500, 1000])
+  toast("Go to Main");
   sleep(300);
-  swipe(400, 1000, 1000, 1000, 300);
+  swipe(400, 800, 1000, 800, 300);
   sleep(300);
-  swipe(400, 1000, 1000, 1000, 300);
+  swipe(400, 800, 1000, 800, 300);
   sleep(300);
-  swipe(400, 1000, 1000, 1000, 300);
+  swipe(400, 800, 1000, 800, 300);
   sleep(300);
-  swipe(1000, 1000, 400, 1000, 300);
+  swipe(1000, 800, 400, 800, 300);
   sleep(300);
 }
 // Go to Garden
 function gotoGarden() {
+  toast("Go to Garden");
   sleep(300);
-  swipe(400, 1000, 1000, 1000, 300);
+  swipe(400, 800, 1000, 800, 300);
   sleep(300);
   sleep(300);
-  swipe(400, 1000, 1000, 1000, 300);
+  swipe(400, 800, 1000, 800, 300);
   sleep(300);
 }
 // Go to Kitchen
 function gotoKitchen() {
   sleep(300);
-  swipe(1000, 1000, 400, 1000, 300);
+  swipe(1000, 800, 400, 800, 300);
   sleep(300);
   sleep(300);
-  swipe(1000, 1000, 400, 1000, 300);
+  swipe(1000, 800, 400, 800, 300);
   sleep(300);
 }
 
@@ -195,16 +209,16 @@ function gotoKitchen() {
 // TODO:有个延迟的问题没有解决
 function cleanAchieve() {
   // Achieve button
-  click(600, 2000);
+  click(600, 2000 + 180);
   sleep(400);
   // Achieve part
-  click(200, 400);
+  click(200, 450);
   sleep(400);
   // Achieve point
-  click(800, 700);
+  click(800, 720);
   sleep(400);
   // Watch ads
-  click(800, 1400);
+  click(800, 1480);
   sleep(400);
   // wait 30s
   sleep(35000);
@@ -213,6 +227,6 @@ function cleanAchieve() {
   click(900, 100);
   sleep(400);
   // point over to main
-  click(540, 1940);
+  click(540, 1940 + 180);
   sleep(400);
 }
