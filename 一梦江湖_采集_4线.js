@@ -23,10 +23,10 @@ function changeRegion() {
     click(1820, 700)
     sleep(7500)
 
+    changeR += 1
     click(2070, 14)
     sleep(500)
-    click(2070, ((changeR % 8) + 1) * 115)
-    changeR += 1
+    click(2070, (changeR % 5) * 115)
 }
 
 setInterval(changeRegion, 3500)

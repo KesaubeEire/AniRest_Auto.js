@@ -21,7 +21,7 @@ function changeRegion() {
 
     toast(changeR);
     click(1820, 700)
-    sleep(7500)
+    sleep(9500)
 
     click(2070, 14)
     sleep(500)
