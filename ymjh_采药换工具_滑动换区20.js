@@ -17,10 +17,17 @@ function changeRegion() {
 
     // 采集
     toast(changeR);
-    click(1820, 700)
+    click(1820, 700) // 点击采集
     sleep(800)
-    click(1600, 600)
-    sleep(7500)
+
+    click(1600, 600) // 换工具
+
+    click(1820, 600) // 学秘籍
+    sleep(500)
+    click(1520, 770) // 点确定
+    sleep(500)
+
+    sleep(6500)
 
     // 换区
     click(2070, 14)
@@ -42,7 +49,7 @@ function changeRegion() {
         }
 
         if (len >= 8) {
-            toast('more than 8')
+            // toast('more than 8')
             step = len % 8
             swipe(2070, 8 * 117, 2070, 1 * 117, 100);
             swipe(2070, 8 * 117, 2070, (8 - step - 1) * 117, 100);
